@@ -1,0 +1,217 @@
+body{
+    background-color: #f6f6f6;
+    font-family:  'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.card{
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .28rem;
+}
+
+.min{
+    min-height: 140px;
+}
+
+.contenido{
+    padding-top: 60px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+
+.bg{
+    background-color: rgb(255, 255, 255);
+}
+
+.cambio{
+    opacity: 1;
+}
+
+.cambio:hover{
+    opacity: .9;
+}
+
+.btn:hover{
+    background-color: rgb(82, 82, 82);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.rounded-bottom{
+    border-radius: 0px 0px 40px 40px !important;
+}
+
+.rounded-top{
+    border-radius: 40px 40px 0px 0px !important;
+}
+
+.color{
+    background-color: #fff;
+}
+
+.logo{
+    background-image: url(Images/Logo-black.png);
+    width: 150px;
+    height: 125px;
+}
+
+.logowhite{
+    background-image: url(Images/Logo-yellow.png);
+    width: 150px;
+    height: 125px;
+    filter: grayscale(100%);
+}
+
+.banner{
+    width: 100%;
+    height: 610px;
+    background-image: url(Images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll
+}
+
+.navbar-toggler{
+    background-image: url(Images/menu-light.png);
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    border-color: transparent !important;
+}
+
+h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+h3{
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+
+h6{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+a{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+p{
+    font-size: 19px;
+    margin: 0;
+}
+
+.sc{
+    box-shadow: 3px 20px 20px 5px rgba(194, 194, 194, 0.664);;
+}
+
+.Carrito{
+    background-image: url(Images/carrito-white.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.nav-link{
+    color: #393939;
+}
+
+.nav-link:hover{
+    color: #181818;
+    text-decoration: underline;
+}
+
+.nav-link:focus{
+    color: #181818;
+    text-decoration: underline;
+}
+
+.cross{
+    opacity: .5;
+}
+
+.cross:hover{
+    opacity: 2;
+}
+
+body.dark{
+    background-color: #393939;
+}
+
+body.dark .bg{
+    background-color: #393939;
+}
+
+body.dark .Amarillo{
+    background-color: #020814;
+}
+
+body.dark .black{
+    background-color: #fee799;
+}
+
+body.dark .nav-link{
+    color: #fee799;
+}
+
+body.dark .nav-link:hover{
+    color: #fee799;
+}
+
+body.dark .nav-link:focus{
+    color: #fee799;
+}
+
+body.dark .logo{
+    background-image: url(Images/Logo-yellow.png);
+}
+
+body.dark .banner{
+    background-image: url(Images/bg-desktop-dark.jpg);
+}
+
+body.dark h1, h2{
+    color: #c7c7c7;
+}
+
+body.dark .Degradado{
+    background: linear-gradient(#020814 45%, #23262f 45%) border-box
+}
+
+body.dark .color{
+    background-color: #020814;
+}
+
+
+/*colores*/
+
+.Amarillo{ background-color: #fee799;}
+.black{ background-color: #393939;}
+.Degradado{ background: linear-gradient(hsl(0, 0%, 100%)45%, #fee799 45%) border-box}

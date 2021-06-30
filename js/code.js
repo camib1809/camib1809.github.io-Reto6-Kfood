@@ -1,4 +1,5 @@
 const btnDarkLight = document.querySelector("#Light-dark-mode");
+const favicon = document.querySelector("#favicon");
 let x = 0;
 
     btnDarkLight.addEventListener("click", function (){
@@ -6,9 +7,11 @@ let x = 0;
         
         if(x == 0){
             btnDarkLight.src= "Images/icon-sun.svg";
+            favicon.href= "Images/favicon.ico";
             x = 1;
         }else{
             btnDarkLight.src= "Images/icon-moon.svg";
+            favicon.href= "Images/favicon-light.ico";
             x = 0;
         }
 });

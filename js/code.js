@@ -15,10 +15,10 @@ let x = 0;
 
 //Variables 
 
-const addToShoppingCartButtons = document.querySelectorAll('.Agregar');
-const shoppingCartItemsContainer = document.querySelector('#shoppingContainer');
+const addToShoppingCart = document.querySelectorAll('.Agregar');
+const CartContainer = document.querySelector('#shoppingContainer');
 const removeAllItems = document.querySelector('#clearAll');
-const msmCar = document.getElementById('textcar');
+const AlertCart = document.getElementById('textcar');
 const VerMas = document.querySelector('.ver')
 const textMas = document.querySelector('#mas')
 const productos = document.querySelectorAll('.productos');
@@ -30,13 +30,15 @@ totalCarrito.textContent = totalProductos();
 
 // Eventos
 
-addToShoppingCartButtons.forEach(addToCartButton => {
+addToShoppingCart.forEach(addToCartButton => {
     addToCartButton.addEventListener('click', addToCartClicked);
 });
-shoppingCartItemsContainer.addEventListener('click', removeShoppingCartItem);
+CartContainer.addEventListener('click', removeShoppingCartItem);
 removeAllItems.addEventListener("click", clearItems);
 VerMas.addEventListener("click", VerTodo);
 
+
+// Funciones
 function addToCartClicked(event){
     const button = event.target;
     const card = button.closest('.card');
@@ -44,7 +46,6 @@ function addToCartClicked(event){
     const cardTitle = card.querySelector('#title').textContent;
     const cardPrice = card.querySelector('#price').textContent;
     const cardImg = card.querySelector('.prod-img').src;
-    // console.log('addToCartClicked -> cardPrice', cardTitle, cardPrice, cardImg);
 
     addItemToShoppingCart(cardTitle, cardPrice, cardImg);
 }
@@ -68,35 +69,37 @@ function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
     </div>
 </div>`;
     shoppingCartRow.innerHTML = shoppingCartContent;
-    shoppingCartItemsContainer.append(shoppingCartRow);
+    CartContainer.append(shoppingCartRow);
 
     shoppingCartRow.querySelector('.cross').addEventListener('click', removeShoppingCartItem);
 
     totalCarrito.textContent = totalProductos();
 
-    // Condicional para eliminar 
-        msmCar.classList.add("d-none");
-        msmCar.classList.remove("d-flex");
+// Condicional para eliminar 
+    AlertCart.classList.add("d-none");
+    AlertCart.classList.remove("d-flex");
     
 }
 
 function removeShoppingCartItem(event){
+    
     if(event.target.classList.contains("cross")){    
         event.target.parentElement.parentElement.parentElement.remove();
         totalCarrito.textContent = totalProductos();
         console.log();
-
         
     }
+
     // Condicional para eliminar 
+
     if(totalProductos() == 0){
-        msmCar.classList.add("d-flex");
-        msmCar.classList.remove("d-none");
+        AlertCart.classList.add("d-flex");
+        AlertCart.classList.remove("d-none");
     }
 }
 
 function clearItems(event){
-    const productosCarrito = Array.from(shoppingCartItemsContainer.children);
+    const productosCarrito = Array.from(CartContainer.children);
     console.log(productosCarrito);
 
     let arrayCompleted = productosCarrito;
@@ -108,13 +111,13 @@ function clearItems(event){
     totalCarrito.textContent = totalProductos();
 
     // Condicional para eliminar 
-    msmCar.classList.add("d-flex");
-    msmCar.classList.remove("d-none");
+    AlertCart.classList.add("d-flex");
+    AlertCart.classList.remove("d-none");
 }
 
 function totalProductos(){
 
-    const productosCarrito = Array.from(shoppingCartItemsContainer.children);
+    const productosCarrito = Array.from(CartContainer.children);
     console.log(productosCarrito);
 
     let totalProductos = productosCarrito;

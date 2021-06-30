@@ -19,8 +19,6 @@ const addToShoppingCart = document.querySelectorAll('.Agregar');
 const CartContainer = document.querySelector('#shoppingContainer');
 const removeAllItems = document.querySelector('#clearAll');
 const AlertCart = document.getElementById('textcar');
-const VerMas = document.querySelector('.ver')
-const textMas = document.querySelector('#mas')
 const productos = document.querySelectorAll('.productos');
 
 // Actualiza el número total de productos en carrito
@@ -53,8 +51,9 @@ function addToCartClicked(event){
 function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
     const shoppingCartRow = document.createElement('div');
     totalCarrito.textContent = totalProductos();
-    const shoppingCartContent = `
-    <div class="row d-flex flex-row px-5 py-3 border-bottom">
+    const shoppingCartContent = 
+    
+    `<div class="row d-flex flex-row px-5 py-3 border-bottom">
     <div class="col-11 col-sm-11 d-flex flex-column flex-sm-row justify-content-center align-items-center">
         <img src=${cardImg} class="col-11 col-sm-2 mr-0 mr-sm-3">
         <div class="col-12 col-sm-5 text-center d-flex flex-column justify-content-center ml-0 ml-sm-5 mt-2 mt-sm-0">
@@ -68,6 +67,7 @@ function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
         <img src="Images/icon-cross.svg" class="cross">
     </div>
 </div>`;
+
     shoppingCartRow.innerHTML = shoppingCartContent;
     CartContainer.append(shoppingCartRow);
 
@@ -129,13 +129,37 @@ function totalProductos(){
 // boton de ver más
 
 function myFunction() {
-    var x = document.getElementById("productos");
-    if (x.classList == "d-none") {
+
+    var x = document.querySelectorAll(".productos");
+    var p = Array.from(x);
+
+    const textbtn = document.querySelector("#mas");
+    const imgbtn = document.querySelector("#Img");
+    const margen = document.querySelector(".boton");
+
+    p.forEach(function(x, i){
+    
+    if (x.classList.contains("d-none")) {
         x.classList.add("d-flex");
         x.classList.remove("d-none");
+        textbtn.textContent= "Ver menos";
+        imgbtn.setAttribute('src', 'Images/menos.png');
+        margen.classList.remove("mt-1");
+        margen.classList.add("mt-5");
+
+    
     } else {
-        x.classList.add("d-flex");
+        x.classList.add("d-none");
+        x.classList.remove("d-flex");
+        textbtn.textContent= "Ver más";
+        imgbtn.setAttribute('src', 'Images/mas.png');
+        margen.classList.add("mt-1");
+        margen.classList.remove("mt-5");
+    
     }
+
+    })
+    
 }
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         <header>
           <section class="wrapper">
             <div class="row justify-content-center bg py-2">
-                <div class="col-1 py-2 black cursor-pointer rounded-pill d-flex justify-content-center cambio">
+                <div class="col-2 col-sm-1 py-2 black cursor-pointer rounded-pill d-flex justify-content-center cambio">
                     <img src="Images/icon-moon.svg" width="30px" id="Light-dark-mode">
                 </div>
             </div>
@@ -32,185 +32,229 @@
           <section class="contenido">
             
             <div class="row Amarillo rounded-bottom">
-                <div class="col-12 d-flex justify-content-center py-1">
-                  <div class="col-8 d-flex d-md-none logo"></div>
-            
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav"></div>
-                          <a class="nav-link active px-5" aria-current="page" href="#">Inicio</a>
-                          <a class="nav-link px-5" href="#">Productos</a>
-                          <div class="d-none d-md-flex logo mx-"></div>
-                          <a class="nav-link px-5" href="#">Carrito</a>
-                          <a class="nav-link px-5" href="#">Contacto</a>
-                        </div>
-                      </div>
+                <div class="col-12 d-flex justify-content-between justify-content-sm-center align-items-center py-1 px-5">
+                  <div class="col-7 d-flex d-md-none logo p-0"></div>
+
+                  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center align-items-center">
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                     
+                      <ul class="navbar-nav">
+                        <li class="nav-item d-flex align-items-center justify-content-center px-4">
+                          <a class="nav-link" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center px-4">
+                          <a class="nav-link" href="#Productos">Productos</a>
+                        </li>
+                        <div class="d-none d-none d-lg-flex logo px-5"></div>
+                        <li class="nav-item d-flex align-items-center justify-content-center px-4">
+                          <a class="nav-link" href="#Carrito">Carrito</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center px-4">
+                          <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                      </ul>
+
                     </div>
                   </nav>
+
                 </div>
+            </div>
         
         
-          <div class="row banner m-0 d-flex justify-content-center">
-              <div class="col-10 flex-column d-flex text-center justify-content-center p-0">
+          <div class="row banner m-0 d-flex justify-content-center align-items-center justify-content-center mb-5">
+              <div class="col-10 flex-column d-none d-sm-flex text-center justify-content-center p-0">
                   <h1>DISFRUTA NUESTRA SEMANA 20%</h1>
                   <h2>Descuento en todas nuestras comidas</h2>
               </div>
+
+              <a name="Inicio"></a>
+
+              <div class="col-10 d-flex d-sm-none flex-column justify-content-center">
+                  <h1 class="m-0 text-center">NUESTRA SEMANA</h1>
+                  <h2 class="col-4 mx-auto p-0">20%</h2>
+              </div>
           </div>
-          <div class="row d-flex justify-content-center my-5">
-            <div class="col-4 Amarillo rounded-3 d-flex justify-content-center align-items-center py-2">
+          
+          <a name="Productos"></a>
+          <div class="row d-flex justify-content-center my-md-5">
+            <div class="col-8 col-md-5 col-lg-3 Amarillo rounded-3 d-flex justify-content-center align-items-center py-2 min-w">
               <h3 class="m-0">PRODUCTOS</h3>
             </div>
           </div>
-          
-          <div class="row d-flex justify-content-center mt-5">
-            <div class="card Degradado pt-3 me-5 sc" style="width: 14rem;">
-            <img src="Images/Pizza.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Pizza</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto ">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc me-5" style="width: 14rem;">
-            <img src="Images/papas.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Papitas</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc me-5" style="width: 14rem;">
-            <img src="Images/hamburguesa.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Hamburguesa</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc" style="width: 14rem;">
-            <img src="Images/Perro.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Perro</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          
-                </div>
-          
-                <div class="row d-flex justify-content-center mt-5">
-          <div class="card Degradado pt-3 sc me-5" style="width: 14rem;">
-            <img src="Images/Cerveza.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Cerveza</h4>
-              <p class="card-text mb-3">$5000</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc me-5" style="width: 14rem;">
-            <img src="Images/Limonada.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Limonada</h4>
-              <p class="card-text mb-3">$ 7000</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc me-5" style="width: 14rem;">
-            <img src="Images/Malteada.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Malteada</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-          <div class="card Degradado pt-3 sc" style="width: 14rem;">
-            <img src="Images/Sangria.png" alt="...">
-            <div class="card-body text-center p-0 pb-4">
-              <h4 class="card-title mt-1">Sangria</h4>
-              <p class="card-text mb-3">Queso y pepperoni</p>
-              <a href="#" class="col-11 btn btn-dark  d-flex flex-row align-items-center py-3 m-auto">
-                <div class="col-9"><h5>Agregar</h5></div>
-                <div class="col-2 Carrito"></div>
-              </a>
-            </div>
-          </div>
-                </div>
-          
+         <div>
+
+           <div>
+           <div class="row d-flex justify-content-center align-items-center mt-5">
+             
+            
+             
+             <div class="productos card col-7 col-md-4 col-lg-2 Degradado pt-3 mr-0 mr-md-5 sc" style="width: 14rem;"> 
+                 <img src="Images/Pizza.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Pizza</h4>
+                   <p class="card-text mb-3" id="price">$ 20000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
               </div>
+
+                          
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mr-0 mr-lg-5 mt-5 mt-md-0 mt-lg-0" style="width: 14rem;">
+                 <img src="Images/papas.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Papitas</h4>
+                   <p class="card-text mb-3" id="price">$ 12000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div> 
+                </div>
+                  
+                  
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mr-0 mr-md-5 mt-5 mt-lg-0" style="width: 14rem;">
+                 <img src="Images/hamburguesa.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Hamburguesa</h4>
+                   <p class="card-text mb-3" id="price">$ 13000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
+                </div>
+                            
+                    
+                    
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mt-5 mt-lg-0" style="width: 14rem;">
+                 <img src="Images/Perro.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Perro</h4>
+                   <p class="card-text mb-3" id="price">$ 10000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
+                </div>
+              
+              </div>
+
+                   <div class="row d-flex justify-content-center mt-5">
+
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mr-0 mr-md-5" style="width: 14rem;">
+                 <img src="Images/Cerveza.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Cerveza</h4>
+                   <p class="card-text mb-3" id="price">$5000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
+                </div>
+                            
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mr-0 mr-lg-5 mt-5 mt-md-0" style="width: 14rem;">
+                 <img src="Images/Limonada.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Limonada</h4>
+                   <p class="card-text mb-3" id="price">$ 7000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
+                </div>
+                
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mr-0 mr-md-5 mt-5 mt-lg-0" style="width: 14rem;">
+                 <img src="Images/Malteada.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Malteada</h4>
+                   <p class="card-text mb-3" id="price">$ 7000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5 class="btn-text">Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>   
+                </div>
+                            
+                <div class="productos card col-7 col-md-4 col-lg-2 d-md-flex Degradado pt-3 sc mt-5 mt-lg-0" style="width: 14rem;">
+                 <img src="Images/Sangria.png" class="prod-img">
+                 <div class="card-body text-center p-0 pb-4">
+                   <h4 class="card-title mt-1" id="title">Sangria</h4>
+                   <p class="card-text mb-3" id="price">$ 9000</p>
+                   <a href="#" class="Agregar col-11 btn d-flex justify-content-center py-3 m-auto">
+                     <div class="col-9 p-0"><h5>Agregar</h5></div>
+                     <div class="col-3 Carrito"></div>
+                   </a>
+                 </div>
+               </div>
+
+              </div>
+            </div>
+         </div>
           
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="d-flex d-md-none flex-column align-items-center justify-content-center">
+                  <button onclick="myFunction()" class="d-flex flex-column align-items-center">
+                  <div class="ver rounded-circle d-flex align-items-center justify-content-center max-w p-3 black cursor-pointer hover" id="Ver">
+                    <img src="Images/mas.png" width="40px"></div>
+                  <h7 id="mas">Ver más</h7>
+
+                </button>
+                
+                </div>
+                  
+              </div>
+
+          <a name="Carrito"></a>
+
               <div class="row d-flex justify-content-center mt-5 mb-5">
-                <div class="col-4 Amarillo rounded-3 d-flex justify-content-center align-items-center pt-2">
-          <h3 class="m-0">TU CARRITO</h3>
+                <div class="col-8 col-md-5 col-lg-3 Amarillo rounded-3 d-flex justify-content-center align-items-center pt-2 min-w">
+          <h3 class="m-0 text-center">TU CARRITO</h3>
                 </div>
               </div>
+              
           
               <div class="row justify-content-center mb-5">
-          <div class="col-8 card rounded-3 p-0 sc ">
+          <div class="col-10 col-sm-8 card rounded-3 p-0 sc ">
             <div class="card-body px-0 pb-0 color">
-                <div class="d-flex flex-row border-bottom py-3">
-                  <h4 class="col-2 m-0 ms-5">PRODUCTO</h4>
-                  <h4 class="col-5 m-0 ms-5">NOMBRE</h4>
-                  <h4 class="col-2 m-0">PRECIO</h4>
+                <div class="d-flex flex-row justify-content-between justify-content-sm-start border-bottom py-3">
+                  <h4 class="col-4 col-md-4 col-lg-3 m-0 ml-0 ml-sm-3">PRODUCTO</h4>
+                  <h4 class="col-3 col-md-4 col-lg-5 m-0 ml-0 ml-sm-3">NOMBRE</h4>
+                  <h4 class="col-4 col-md-3 col-lg-4 m-0">PRECIO</h4>
                 </div>
-                <div class="containerItems mb-3">
-                  <div class="d-flex flex-row px-5 py-3 border-bottom">
-                      <img src="images/papas.png" class="col-2 me-3">
-                      <div class="col-5 d-flex flex-column justify-content-center ms-5">
+                <div class="d-flex justify-content-center align-items-center my-5" id="textcar"><h4 class="m-0">Carrito Vacio</h4></div>
+
+                <div class="containerItems mb-3" id="shoppingContainer">
+                  
+                  <!-- <div class="d-flex flex-row px-5 py-3 border-bottom">
+                      <img src="images/papas.png" class="col-2 mr-3">
+                      <div class="col-5 d-flex flex-column justify-content-center ml-5">
                         <h4>Papitas</h4>
-                        <p>INGREDIENTES</p>
                       </div>
-                      <div class="col-3 ms-5 d-flex align-items-center">
+                      <div class="col-3 ml-5 d-flex align-items-center">
                         <h4>$ 12000</h4>
                       </div>
-                      <div class="col-1 d-flex align-items-center cursor-pointer cross">
-                        <img src="Images/icon-cross.svg" alt="">
+                      <div class="d-flex align-items-center cursor-pointer">
+                        <img src="Images/icon-cross.svg" class="cross">
                       </div>
-                  </div>
-                  <div class="d-flex flex-row px-5 py-3 border-bottom">
-                    <img src="images/Limonada.png" class="col-2 me-3">
-                    <div class="col-5 d-flex flex-column justify-content-center ms-5">
-                      <h4>Limonada</h4>
-                      <p>INGREDIENTES</p>
-                    </div>
-                    <div class="col-3 ms-5 d-flex align-items-center">
-                      <h4>$ 8000</h4>
-                    </div>
-                    <div class="col-1 d-flex align-items-center cursor-pointer cross">
-                      <img src="Images/icon-cross.svg" alt="">
-                    </div>
+                  </div> -->
+    
                 </div>
-                </div>
-                <div class="Amarillo d-flex pe-3 ps-5 py-4">
+                <div class="bg-card d-flex pr-0 pr-sm-3 pl-3 pl-md-5 py-2 py-sm-4">
                   <div class="rounded-circle d-flex align-items-center justify-content-center black">
-                    <h4 class="m-0 text-white px-3 py-2">2</h4>
+                    <h4 class="m-0 text-white px-6 px-sm-4 py-3"><span id="items">2</span></h4>
                   </div >
-                    <h4 class="col-3 d-flex align-items-center m-0 ms-3">Productos en el carrito</h4>
-                    <div class="col-8 d-flex justify-content-end align-items-center">
-                      <h4 class="m-0 cursor-pointer nav-link">Limpiar</h4>
+                    <h4 class="col-7 col-sm-6 d-flex align-items-center m-0 ml-0 ml-sm-3 text-center">Productos en el carrito</h4>
+                    <div class="col-2 col-sm-3 col-md-4 d-flex justify-content-start justify-content-md-end align-items-center ml-0 ml-lg-5">
+                      <h4 class="m-0 cursor-pointer nav-link p-0" id="clearAll">Limpiar</h4>
                     </div>
                 </div>
             </div>
@@ -220,19 +264,22 @@
 
     <footer>
         <div class="row black d-flex  justify-content-center p-5 mt-5 rounded-top">
-            <div class="col-3 logowhite me-4"></div>
-            <div class="col-4 col-lg-5 d-flex justify-content-center flex-column">
+            <div class="col-5 col-sm-2 logowhite mr-1 mr-sm-2"></div>
+            <div class="col-5 col-lg-6 d-flex justify-content-center flex-column">
                 <h6>MARIA CAMILA BERMUDEZ GONZALEZ</h6>
                 <h6>FICHA 2068874</h6>
             </div>
         </div>
     </footer>
 
+    <a name="Contacto"></a>
+
   </div>
 
     <script src="js/code.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/usm/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     
 </body>
 </html>

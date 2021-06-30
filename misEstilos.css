@@ -1,6 +1,7 @@
 body{
     background-color: #f6f6f6;
     font-family:  'Montserrat', sans-serif;
+    color: #393939;
 }
 
 header{
@@ -9,17 +10,9 @@ header{
     z-index: 100;
 }
 
-.card{
+.card-body{
     border: 0px solid rgba(0,0,0,.125);
-    border-radius: .28rem;
-}
-
-.min{
-    min-height: 140px;
-}
-
-.contenido{
-    padding-top: 60px;
+    border-radius: .30em !important;
 }
 
 .wrapper {
@@ -28,46 +21,32 @@ header{
     overflow:hidden;
 }
 
-.bg{
-    background-color: rgb(255, 255, 255);
-}
+.contenido{ padding-top: 60px;}
 
-.cambio{
-    opacity: 1;
-}
+.bg{ background-color: rgb(255, 255, 255);}
 
-.cambio:hover{
-    opacity: .9;
-}
+.cambio{ opacity: 1;}
 
-.btn:hover{
-    background-color: rgb(82, 82, 82);
-}
+.cambio:hover{ opacity: .9;}
 
-.cursor-pointer{
-    cursor: pointer;
-}
+.cursor-pointer{ cursor: pointer;}
 
-.rounded-bottom{
-    border-radius: 0px 0px 40px 40px !important;
-}
+.rounded-bottom{ border-radius: 0px 0px 40px 40px !important;}
 
-.rounded-top{
-    border-radius: 40px 40px 0px 0px !important;
-}
+.rounded-top{ border-radius: 40px 40px 0px 0px !important;}
 
-.color{
-    background-color: #fff;
-}
+.color{ background-color: #fff;}
 
 .logo{
     background-image: url(Images/Logo-black.png);
+    background-repeat: no-repeat;
     width: 150px;
     height: 125px;
 }
 
 .logowhite{
     background-image: url(Images/Logo-yellow.png);
+    background-repeat: no-repeat;
     width: 150px;
     height: 125px;
     filter: grayscale(100%);
@@ -89,6 +68,10 @@ header{
     border-color: transparent !important;
 }
 
+.navbar-toggler:hover{
+    opacity: .9;
+}
+
 h1{
     font-size: 100px;
     color: #fff;
@@ -108,7 +91,8 @@ h3{
 
 h5{
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
+    letter-spacing: 4px;
     margin: 0;
 }
 
@@ -128,20 +112,9 @@ p{
     margin: 0;
 }
 
-.sc{
-    box-shadow: 3px 20px 20px 5px rgba(194, 194, 194, 0.664);;
-}
+.sc{ box-shadow: 3px 20px 20px 5px rgba(194, 194, 194, 0.664);}
 
-.Carrito{
-    background-image: url(Images/carrito-white.png);
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-}
-
-.nav-link{
-    color: #393939;
-}
+.nav-link{ color: #393939;}
 
 .nav-link:hover{
     color: #181818;
@@ -153,65 +126,166 @@ p{
     text-decoration: underline;
 }
 
-.cross{
-    opacity: .5;
+.cross{ opacity: .6;}
+
+.cross:hover{ opacity: 2;}
+
+.btn{ 
+    background-color: #393939; 
+    color: #fff;
 }
 
-.cross:hover{
-    opacity: 2;
+.btn:hover{ 
+    background-color: rgb(82, 82, 82);
+    color: #fff;
 }
 
-body.dark{
-    background-color: #393939;
+.Carrito{
+    background-image: url(Images/carrito-white.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
 }
 
-body.dark .bg{
-    background-color: #393939;
+.bg-card{ background-color: #fee799;}
+
+.max-w{
+    max-width: 60px;
 }
 
-body.dark .Amarillo{
-    background-color: #020814;
+.min-w{
+    min-width: 340px;
 }
 
-body.dark .black{
+.hover:hover{
+    background-color: #414243;
+}
+
+h7{
+    font-size: 20px;
+    font-weight: 300;
+    color: #23262f;
+}
+
+
+
+/*********************** MODO DARK **************************/
+
+body.dark{ 
+    background: #393939;
+    color: #fff;
+}
+
+body.dark .bg{ background-color: #393939;}
+
+body.dark .Amarillo{ background-color: #020814;}
+
+body.dark .black{ background-color: #fee799;}
+
+body.dark .nav-link{ color: #fee799;}
+
+body.dark .nav-link:hover{ color: #fee799;}
+
+body.dark .nav-link:focus{ color: #fee799;}
+
+body.dark .logo{ background-image: url(Images/Logo-yellow.png);}
+
+body.dark .banner{ background-image: url(Images/bg-desktop-dark.jpg);}
+
+body.dark h1{ color: #c7c7c7;}
+
+body.dark h2{ color: #c7c7c7;}
+
+body.dark .Degradado{ background: linear-gradient(#020814 45%, #23262f 45%) border-box}
+
+body.dark .color{ background-color: #020814;}
+
+body.dark h3{ color: #fee799;}
+
+body.dark .text-white{ color: #020814 !important;}
+
+body.dark .sc{ box-shadow: 3px 20px 20px 5px rgba(16, 16, 16, 0.664);}
+
+body.dark .btn{ 
     background-color: #fee799;
+    color: #393939;
 }
 
-body.dark .nav-link{
+body.dark .btn:hover{ background-color: #ffdf6cdb;}
+
+body.dark .Carrito{ background-image: url(Images/carrito-black.png);}
+
+body.dark .bg-card{ background-color: #23262f;}
+
+body.dark .border-bottom{
+    border-bottom: 1px solid #414243 !important;
+}
+
+body.dark h6{ color: #393939;}
+
+body.dark .logowhite{ background-image: url(Images/Logo-black.png);}
+
+body.dark h7{ color: #fee799;}
+
+body.dark .hover:hover{ background-color: #ffdf6cdb;}
+
+body.dark .navbar-light .navbar-nav .nav-link {
     color: #fee799;
 }
 
-body.dark .nav-link:hover{
-    color: #fee799;
+body.dark .navbar-toggler{
+    background-image: url(Images/menu-dark.png);
+    background-repeat: no-repeat;
 }
 
-body.dark .nav-link:focus{
-    color: #fee799;
+button{
+    border: 0px;
+    background-color: transparent;
 }
-
-body.dark .logo{
-    background-image: url(Images/Logo-yellow.png);
-}
-
-body.dark .banner{
-    background-image: url(Images/bg-desktop-dark.jpg);
-}
-
-body.dark h1, h2{
-    color: #c7c7c7;
-}
-
-body.dark .Degradado{
-    background: linear-gradient(#020814 45%, #23262f 45%) border-box
-}
-
-body.dark .color{
-    background-color: #020814;
-}
-
 
 /*colores*/
 
 .Amarillo{ background-color: #fee799;}
 .black{ background-color: #393939;}
 .Degradado{ background: linear-gradient(hsl(0, 0%, 100%)45%, #fee799 45%) border-box}
+
+@media (max-width: 560px) {
+
+    .banner{
+        background-image: url(Images/bg-mobile-light.jpg);
+        background-repeat: no-repeat;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    h2{
+        font-size: 100px;
+        letter-spacing: -8px;
+        font-weight: 400;
+    }
+
+    h3{
+        font-size: 35px;
+    }
+
+    h4{
+        font-size: 13px;
+    }
+
+    .px-6{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h6{
+        font-size: 18px;
+    }
+
+    body.dark .banner{
+        background-image: url(Images/bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+    }
+
+}
